@@ -12,7 +12,7 @@
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|group_name|string|null: false, unipue: true|
+|name|string|null: false, unipue: true|
 ### Association
 - has_many :users, through: groups_users
 - has_many :group_users
@@ -31,10 +31,10 @@
 ## messageテーブル
 |Column|Type|Options|
 |------|----|-------|
-|body|text|null: false|
-|image-id|string|
-|group_id|integer|foreign_key: true|
-|user_id|integer|foreign_key: true|
+|body|text|
+|image|string|
+|group_id|integer|foreign_key: true、null: false|
+|user_id|integer|foreign_key: true、null: false|
 ### Association
 - belongs_to :user
 - belongs_to :group
