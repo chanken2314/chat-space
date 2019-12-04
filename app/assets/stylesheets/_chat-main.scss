@@ -65,25 +65,25 @@
     display: block;
     padding: 0;
 
-    
-    .caht__message__info {
+
+    &__info {
       display: flex;
       flex-direction:row;
       margin-bottom: 10px;
 
-      .chat__message__user {
+      &__user {
         color: #434a54;
         font-size: 25px;
         font-weight: bold;
         margin-right:10px;
       }
-      .chat__message__date {
+      &__date {
         font-size: 12px;
         font-weight: bold;
       }
     }
 
-    .chat__message__text {
+    &__text {
       color: #434a54;
       font-size: 14px;
       margin-top:10px;
