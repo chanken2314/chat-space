@@ -11,8 +11,10 @@
         / ユーザー編集ページに遷移するためのパスを追加
 
   .chat-groups
-    .chat-group
-      %h3.chat-group__name
-        66-group
-      %h3.chat-group__message
-        最近のメッセージなし
+    - current_user.groups.each do |group|
+      .chat-group
+        = link_to group_messages_path(group) do
+          .chat-group__name
+            = group.name
+          .chat-group__message
+            最近のメッセージなし
