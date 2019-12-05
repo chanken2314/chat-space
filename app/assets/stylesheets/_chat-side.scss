@@ -51,20 +51,30 @@
 .chat-groups{
   height: calc(100vh - 100px);
   background-color: #2f3e51;
+  
+
 }
 
 
 .chat-group {
   box-sizing: border-box;
   padding: 20px;
-  height: calc(100vh - 100px);
+  margin-bottom: 40px;
   display:block;
+  
+
 
   &__name {
+    color: white;
     font-size: 20px;
     margin-bottom: 15px;
+    
+    
   }
   &__message {
+    text-decoration-line: none;
+    color: white;
     font-size: 12px;
+    
   }
 }
