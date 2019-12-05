@@ -50,6 +50,7 @@
 }
 
 .chat__messages {
+  width: 100%;
   height: calc( 100vh - 190px );
   background-color: #fafafa;
   margin: 0;
@@ -58,7 +59,6 @@
   position: relative;
   border: #eeeeee;
   box-sizing: border-box;
-  overflow: scroll;
 
   .chat__message {
     margin-bottom: 40px;
