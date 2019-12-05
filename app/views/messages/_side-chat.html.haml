@@ -1,0 +1,18 @@
+.chat-side
+  .chat-side-header
+    %ul.chat-side-header__lists
+      %h5.chat-side-header__name
+        ちゃんけん
+      %li.chat-side-header__link
+        = link_to "#" do
+          = icon('fas','edit fa-white')
+        = link_to "#" do
+          = icon('fas', 'cog fa-white')
+
+
+  .chat-groups
+    .chat-group
+      %h3.chat-group__name
+        66-group
+      %h3.chat-group__message
+        最近のメッセージなし

@@ -1,0 +1,37 @@
+.chat-main
+  .chat-header
+    .chat-header__left
+      %h2.group
+        66期Gチーム
+      %p.user
+        menber :
+
+
+    .chat-header__right
+      .chat-header__right__edit-button
+        = link_to "#" do
+          Edit
+          
+  .chat__messages
+    .chat__message
+      .caht__message__info
+        %p.chat__message__user
+          higashi kenichi
+        %p.chat__message__data
+
+    
+      %h4.chat__message__text
+        おはよう
+
+    
+        
+  .chat-footer
+    .form
+      = form_for "#" do |f|
+        = f.text_field :content, class: 'form__message', placeholder: 'type a message'
+            
+        .form__mask
+          = f.label :image, class: 'form__mask__image' do
+            = icon('fas','picture-o', class: 'icon')
+            = f.file_field :image, class: 'hidden'
+        = f.submit 'Send', class: 'form__submit'
