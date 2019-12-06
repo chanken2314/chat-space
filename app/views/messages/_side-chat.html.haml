@@ -14,7 +14,6 @@
     - current_user.groups.each do |group|
       .chat-group
         = link_to group_messages_path(group) do
-          .chat-group__name
-            = group.name
+          = group.name
           .chat-group__message
             最近のメッセージなし
