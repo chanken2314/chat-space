@@ -52,6 +52,7 @@
   height: calc(100vh - 100px);
   background-color: #2f3e51;
   
+  
 
 }
 
@@ -61,18 +62,22 @@
   padding: 20px;
   margin-bottom: 40px;
   display:block;
+
+  .info {
+    color: white;
+    text-decoration-line: none;
+  }
+  
   
 
 
   &__name {
-    color: white;
     font-size: 20px;
     margin-bottom: 15px;
     
     
   }
   &__message {
-    text-decoration-line: none;
     color: white;
     font-size: 12px;
     
