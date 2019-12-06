@@ -1,0 +1,42 @@
+.chat__messages {
+  width: 100%;
+  height: calc( 100vh - 190px );
+  background-color: #fafafa;
+  margin: 0;
+  padding: 40px 46px;
+  padding-bottom: 40px;
+  position: relative;
+  border: #eeeeee;
+  box-sizing: border-box;
+  overflow: auto;
+
+  .chat__message {
+    margin-bottom: 40px;
+    display: block;
+    padding: 0;
+
+
+    &__info {
+      display: flex;
+      flex-direction:row;
+      margin-bottom: 10px;
+
+      &__user {
+        color: #434a54;
+        font-size: 25px;
+        font-weight: bold;
+        margin-right:10px;
+      }
+      &__date {
+        font-size: 12px;
+        font-weight: bold;
+      }
+    }
+
+    &__text {
+      color: #434a54;
+      font-size: 14px;
+      margin-top:10px;
+    }
+  }
+}

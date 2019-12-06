@@ -20,20 +20,24 @@
   &__left {
     float: left;
     padding-top: 30px;
-    padding-bottom: 10px;
-    display: inline-block;
     .group {
-      font-size: 20px;
-      color: gray;
-      letter-spacing: 2px;
-      padding-bottom: 10px;
-    }
-    .user {
+      color: black;
+      font-weight: bold;
       font-size: 12px;
-      line-height: 20px;
-      color: gray;
+      letter-spacing: 2px;
+      .meber-list {
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-between;
+        .member {
+        font-size: 12px;
+        line-height: 20px;
+        color: gray;
+      }
     }
   }
+}  
+
   &__right {
     float: right;
     &__edit-button {
@@ -43,53 +47,56 @@
       line-height: 40px;
       font-size: 14px;
       border: solid 1px #38aef0;
-      text-decoration:none;
       text-align: center;
+      .btn {
+        color: #38aefe;
+        text-decoration:none;
+      }
     }
   }
 }
 
-.chat__messages {
-  width: 100%;
-  height: calc( 100vh - 190px );
-  background-color: #fafafa;
-  margin: 0;
-  padding: 40px 46px;
-  padding-bottom: 40px;
-  position: relative;
-  border: #eeeeee;
-  box-sizing: border-box;
+// .chat__messages {
+//   width: 100%;
+//   height: calc( 100vh - 190px );
+//   background-color: #fafafa;
+//   margin: 0;
+//   padding: 40px 46px;
+//   padding-bottom: 40px;
+//   position: relative;
+//   border: #eeeeee;
+//   box-sizing: border-box;
 
-  .chat__message {
-    margin-bottom: 40px;
-    display: block;
-    padding: 0;
+//   .chat__message {
+//     margin-bottom: 40px;
+//     display: block;
+//     padding: 0;
 
 
-    &__info {
-      display: flex;
-      flex-direction:row;
-      margin-bottom: 10px;
+//     &__info {
+//       display: flex;
+//       flex-direction:row;
+//       margin-bottom: 10px;
 
-      &__user {
-        color: #434a54;
-        font-size: 25px;
-        font-weight: bold;
-        margin-right:10px;
-      }
-      &__date {
-        font-size: 12px;
-        font-weight: bold;
-      }
-    }
+//       &__user {
+//         color: #434a54;
+//         font-size: 25px;
+//         font-weight: bold;
+//         margin-right:10px;
+//       }
+//       &__date {
+//         font-size: 12px;
+//         font-weight: bold;
+//       }
+//     }
 
-    &__text {
-      color: #434a54;
-      font-size: 14px;
-      margin-top:10px;
-    }
-  }
-}
+//     &__text {
+//       color: #434a54;
+//       font-size: 14px;
+//       margin-top:10px;
+//     }
+//   }
+// }
 
 
 
