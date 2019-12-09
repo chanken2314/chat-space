@@ -8,12 +8,12 @@
     
   .chat-footer
     .form
-      = form_for [@group, @message] do |f|
+      = form_for [@group, @message], html: {class: "new_message"} do |f|
         = f.text_field :content, class: 'form__message', placeholder: 'type a message'
         .form__mask
           = f.label :image, class: 'form__mask__image' do
             = icon('fas','picture-o', class: 'icon')
             = f.file_field :image, class: 'hidden'
-        = f.submit 'Send', class: 'form__submit'
+        = f.submit 'send', class: 'form__submit'
 
         
