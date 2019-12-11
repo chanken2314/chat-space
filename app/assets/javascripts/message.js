@@ -40,7 +40,6 @@ $(function() {
 
     .done(function(messages){  
       var html = buildHTML(messages);  
-      $('.chat__messages').val('');
       $('.chat__messages').append(html)
       $('.chat__messages').animate({scrollTop: $('.chat__messages')[0].scrollHeight}, 'fast'); 
       $("#new_message")[0].reset()  
