@@ -1,6 +1,7 @@
 class MessagesController < ApplicationController
   before_action :set_group
 
+  # メッセージを更新するためのアクションを実装
   def index
     @message = Message.new
     @messages = @group.messages.includes(:user)
@@ -8,6 +9,7 @@ class MessagesController < ApplicationController
   
   def create
     @message = @group.messages.new(message_params)
+    
     if @message.save
       # コントローラーでHTMLとjsonの処理を分ける。
       respond_to do |format|
