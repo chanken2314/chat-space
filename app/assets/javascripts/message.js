@@ -6,11 +6,11 @@ $(function() {
 
     var html = `<div class="chat__message" data-message-id="${message.id}" >
                   <div class="chat__message__info">
-                    <p class="chat__message__user">
+                    <p class="chat__message__info__user">
                       ${ message.user_name }
                     </p>
-                    <p class="chat__message__data">
-                      ${ message.created_at.strftime("%Y年%m月%d日 %H:%M") }
+                    <p class="chat__message__info__data">
+                      ${ message.created_at }
                     </p>
                   </div>
                   <div class="chat__message__text">
