@@ -52,11 +52,7 @@ $(function() {
   }) 
 
 
-
-
   var reloadMessages = function () {
-    
-
     if (window.location.href.match(/\/groups\/\d+\/messages/)) {
       last_message_id = $('.chat__message:last').data("message-id");
       
@@ -68,13 +64,12 @@ $(function() {
         data: {id: last_message_id} 
       })
       .done(function(messages) {
-        
         var insertHTML = '';
         $.each(messages, function(i, message) {
           insertHTML += buildHTML(message)
         });
         $('.chat__messages').append(insertHTML); 
-        $('.chat__messages').animate({scrollTop: $('.chat__messages').height()})
+        $('.chat__messages').animate({scrollTop: $('.chat__messages')[0].scrollHeight}, 'fast'); 
       })
       .fail(function() {
         alert('更新に失敗しました');
