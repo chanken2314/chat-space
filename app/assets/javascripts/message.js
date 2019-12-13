@@ -10,7 +10,7 @@ $(function() {
                       ${ message.user_name }
                     </p>
                     <p class="chat__message__data">
-                      ${ message.created_at }
+                      ${ message.created_at.strftime("%Y年%m月%d日 %H:%M") }
                     </p>
                   </div>
                   <div class="chat__message__text">
